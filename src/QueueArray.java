@@ -1,10 +1,34 @@
+import java.util.ArrayList;
+public class QueueArray <T> {
+    private ArrayList<T> list = new ArrayList<T>();
+    public QueueArray() {
 
-public class QueueArray {
+    }
+    public  T enqueue(T item){
+        list.add(item);
+        return  item;
+    }
+    public T dequeue(){
+        T returner = list.get(0);
+         list.remove(0);
+         return returner;
+    }
+    public T peek() {
+        return list.get(0);
+    }
+    public void display(){
+        for ( int i = 0 ; i <= list.size(); i++){
+            System.out.println(list.get(i));
+        }
+    }
+    public int size(){
+         return list.size();
+    }
+    public boolean isEmpty(){
+        return list.get(0) == null;
+    }
+
 }
-
-
-
-
 /*
 E enqueue(E item) - Pushes an item onto the bottom/back of this queue.
 E dequeue() - Removes the object at the top of this queue and returns that object as the value of this function.

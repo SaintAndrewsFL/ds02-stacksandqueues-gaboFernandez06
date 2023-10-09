@@ -1,6 +1,14 @@
+import java.util.ArrayList;
 
+public class StackArray <T> {
+    private ArrayList<T> list = new ArrayList<T>();
+    public StackArray(){
 
-public class StackArray {
+    }
+    public T push(T item){
+          list.add(T);
+    }
+
 
 }
 
