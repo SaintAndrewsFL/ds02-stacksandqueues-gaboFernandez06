@@ -6,9 +6,27 @@ public class StackArray <T> {
 
     }
     public T push(T item){
-          list.add(T);
+          list.add(0,item);
     }
-
+    public T pop(){
+      T  returned = list.get(0);
+        list.remove(0);
+        return  returned;
+    }
+    public T peek(){
+         return list.get(0);
+    }
+    public void display (){
+        for (T t : list) {
+            System.out.println(t);
+        }
+    }
+    public int size (){
+       return  list.size();
+    }
+    public boolean isEmpty(){
+        return  list.get(0) == null;
+    }
 
 }
 
