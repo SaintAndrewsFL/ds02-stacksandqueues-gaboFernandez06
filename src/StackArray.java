@@ -6,7 +6,8 @@ public class StackArray <T> {
 
     }
     public T push(T item){
-          list.add(0,item);
+       list.add(0,item);
+       return  item;
     }
     public T pop(){
       T  returned = list.get(0);

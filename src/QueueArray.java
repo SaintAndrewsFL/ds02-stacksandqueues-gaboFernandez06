@@ -15,6 +15,7 @@ public class QueueArray <T> {
     }
     public T peek() {
         return list.get(0);
+
     }
     public void display(){
         for ( int i = 0 ; i <= list.size(); i++){
